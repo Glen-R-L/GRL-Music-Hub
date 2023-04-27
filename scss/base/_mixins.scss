@@ -1,0 +1,57 @@
+
+@mixin ol-spacing {
+  align-self: $center;
+	flex: 1;
+}
+
+@mixin audio-frame {
+  border: 1px solid silver;
+	border-radius: 500px;
+	padding: .5em 3em 1.4em;
+	background-color: $audio-background;
+}
+
+@mixin header-img-visual {
+  border-radius: 3.5rem;
+	opacity: 0.9;
+}
+
+@mixin border-white {
+	border: 1px solid $white;
+}
+
+@mixin flex-container {
+	display: flex;
+	flex-direction: row;
+}
+
+@mixin flex-plus {
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+@mixin ol-items {
+		margin-left: 11em;
+		margin-right: 1.5em;
+		padding-left: 2.5em;
+		text-align: left;
+		line-height: 1.7em;
+		@media (max-width: 1559px) {
+			margin-left: 9em;
+		}
+		@media (max-width: 1299px) {
+			margin-left: 6em;
+		}
+		@media (max-width: 1099px) {
+			margin-left: 4em;
+		}
+		@media (max-width: 825px) {
+			padding-left: .5em;
+		}
+		@media (max-width: 768px) {
+			margin: 0 auto;
+			padding-left: 2em;
+			text-align: $center;
+		}
+	}
+	

@@ -1,0 +1,8 @@
+
+.main-footer {
+	padding: 1rem 0 1.25rem;
+	background: linear-gradient( to top, $background-primary, $background-secondary );
+	@media (max-width: 699px) {
+		padding: 1rem 1.5rem 1.25rem;
+	}
+}

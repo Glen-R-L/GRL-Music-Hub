@@ -1,0 +1,138 @@
+ 
+.header-images {
+    width: 65%;
+	@include header-img-visual;
+	@media (max-width: 1080px) {
+		width: 70%;
+		border-radius: 3.2rem;
+	}
+	@media (max-width: 870px) {
+		width: 75%;
+		border-radius: 3rem;
+	}
+	@media (max-width: 770px) {
+		width: 80%;
+		border-radius: 2rem;
+	}
+	@media (max-width: 550px) {
+		width: 90%;
+		border-radius: 1.5rem;
+	}
+	@media (max-width: 470px) {
+		width: 96%;
+		border-radius: 1rem;
+	}
+	@media (max-width: 410px) {
+		border-radius: .5rem;
+	}
+}
+
+#head-img {
+	width: 70%;
+	@include header-img-visual;
+	@media (max-width: 1080px) {
+		width: 80%;
+	}
+	@media (max-width: 870px) {
+		border-radius: 3rem;
+	}
+	@media (max-width: 770px) {
+		width: 90%;
+		border-radius: 2rem;
+	}
+	@media (max-width: 640px) {
+		width: 95%;
+	}
+	@media (max-width: 550px) {
+		width: 97%;
+		border-radius: 1.5rem;
+	}
+	@media (max-width: 470px) {
+		display: none;
+	}
+}
+
+#head-img-mobile {
+	display: none;
+	@include header-img-visual;
+	@media (max-width: 470px) {
+		display: inline-block;
+		width: 99%;
+		border-radius: 1rem;
+	}
+	@media (max-width: 410px) {
+		border-radius: .5rem;
+	}
+}
+
+.intro li {
+	display: inline-block;
+}
+
+.intro img, .intro-images img, .intro-images-2 img {
+	width: 16rem;
+	height: 16rem;
+}
+
+.roles {
+	padding: 0;
+	margin: -.62rem -.13rem;
+	border: 1px solid $image-border;
+}
+
+.covers {
+	width: $cover-width;
+	transition: opacity 100ms ease-in-out, width 100ms ease-in-out;
+	@media (max-width: $mid-breakpoint) {
+		margin-top: 1rem;
+	}
+}
+
+.covers-spaced, #covers-spaced-2 {
+	width: $cover-width;
+	margin-top: 1rem;
+	transition: opacity 100ms ease-in-out, width 100ms ease-in-out;
+}
+
+.covers-spaced {
+	@media (max-width: $mid-breakpoint) {
+		margin-top: 2.25rem;
+	}
+}
+
+#covers-spaced-2 {
+	@media (max-width: $mid-breakpoint) {
+		margin-top: 2.5rem;
+	}
+}
+
+.covers-gap {
+	width: $cover-width;
+	margin: 2em 1em 2em 3em;
+	transition: opacity 100ms ease-in-out, width 100ms ease-in-out;
+	@media (max-width: 1000px) {
+			margin: 2.5em 1em 2em 2.5em;
+		}
+	@media (max-width: $mid-breakpoint) {
+		margin: .8em auto 0;
+	}
+}
+
+.covers:hover, .covers-spaced:hover, .covers-gap:hover {
+	width: 15.25rem;
+	opacity: .8;
+} 
+
+#extra-gap {
+	margin: 2em 1em 1.75em 3em;
+	@media (max-width: 1000px) {
+		margin: 2em 1em 1.75em 2.5em;
+	}
+	@media (max-width: $mid-breakpoint) {
+		margin: 2.25em auto 0;
+	}
+}
+
+#phil {
+	width: $cover-width;
+}
