@@ -1,0 +1,33 @@
+
+// Functional Color Variables
+
+$background-primary: rgb(240, 240, 240); 
+$background-secondary: rgb(210, 210, 210);
+$background-center: rgb(137, 137, 137);
+$background-center-light: rgb(165, 165, 165);
+
+$image-border: rgb(156, 126, 126);
+
+$audio-background: lighten(rgb(105, 105, 105), 15%);
+
+
+//Descriptive Color Variables
+
+$white: #fff;
+$black: #000;
+$deep-purple: #673AB7;
+
+
+// Functional Gradient Variables
+
+$background-center-strong: radial-gradient( circle, $background-center, $background-secondary, transparent 180% );
+$background-center-mild: radial-gradient( circle, $background-center, $background-secondary, transparent 110% );
+$background-center-hot: radial-gradient( circle, $background-center, $background-primary, transparent 75% );
+$background-center-warm: radial-gradient( circle, $background-center-light, $background-primary, transparent 95% );
+
+
+// Functional Layout Variables
+
+$center: center;
+$cover-width: 15rem;
+$mid-breakpoint: 768px;
